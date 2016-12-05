@@ -1,0 +1,417 @@
+*{margin:0;padding:0;font-family: "微软雅黑";}
+li{
+	list-style: none;
+}
+body{
+	overflow-x: hidden
+}
+a{
+	text-decoration: none;
+	
+}
+	.logo2{
+		width: 311px;
+		height: 258px;
+		border: none;
+		/*display: none;*/
+		position: absolute;
+		bottom:451px;
+		left:810px;
+		z-index: 199;
+	}
+	.fullpage_1_span{
+		position: absolute;
+		bottom:349px;
+		left:762px;
+		font-size: 18px;
+		line-height: 40.63px;
+		font-family: "黑体";
+		letter-spacing: 28px;
+		/*display: none;*/
+		
+	}
+	
+	#drag{
+		background: black;
+		z-index: 100;
+		opacity: 0;
+		width:1920px;
+		height:979px;
+	}
+	.bgpic{
+		width:1920px;
+		height:979px;
+		z-index: 0;
+		display: none;
+		overflow: hidden;
+	}
+	.picbox{
+		width:1920px;
+		height:979px;
+		overflow: hidden;
+	}
+	
+
+
+.home_cover{
+position: absolute;
+width: 0;
+height: 164px;
+z-index: 70;
+display: none;
+}
+
+.home_screen_3_title_bg{
+	width: 100%;
+	height: 52px;
+	
+	background: white;
+	
+	display: none;
+	z-index: 200;
+}
+.home_screen_3_title{
+	position: relative;
+}
+.home_screen_box{
+	width: 100%;
+	height: 100%;
+	
+	margin:0 auto;
+	z-index: 0;
+}
+.home_screen_3_logo{
+	position: absolute;
+	top:22px;
+	left:104px;
+}
+.home_screen_3_txt_box_1{
+	background: url(../img/home_screen_3_txtbg.png) center 575px no-repeat;
+	background-color: #F4F4F4;
+	width:100%;
+	height: 1435px;
+	margin:0 auto; 
+	position: relative;
+	border-top:7px solid #D80C18;
+	border-bottom: 7px solid #D80C18;
+}
+
+.home_screen_line{
+	width: 119px;
+	height: 2px;
+	background: #A0A0A0;
+	
+}
+.home_screen_3_txt_title{
+	width:126px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	font-size: 29px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top:53px;
+	left: 619px;
+	color: #D80C18;
+}
+.home_screen_line1{
+	position: absolute;
+	top:67px;
+	left:475px;
+}
+.home_screen_line2{
+	position: absolute;
+	top:67px;
+	left:774px;
+}
+.txt{
+	font-size: 15px;
+	display: block;
+	width: 963px;
+	text-align:left;
+	margin: 10px auto;
+	line-height: 30px;
+	color:#817f7f;
+
+}
+.p1{
+	
+	padding-top: 166px;
+}
+.p2{
+	
+}
+.uls1{
+	width: 963px;
+	margin:50px auto;
+	font-weight: bolder;
+	color:#595757;
+}
+.uls1 li{
+	width: 950px;
+	height: 30px;
+
+	padding-left:8px;
+	display: inline-block;
+}
+.uls1 li span{
+	margin-top:10px;
+	margin-right:8px;
+	display: block;
+	border:none;
+	background: #D80C18;
+	width: 11px;
+	height: 11px;
+	float: left;
+}
+.uls1 li div{
+	float: left;
+}
+#content{
+	color:#817F7F;
+}
+.morebtn{
+	width: 117px;
+	height: 30px;
+	border-radius: 13px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+	background: #E68086;
+	border: none;
+	color:white;
+	margin:47px 624.5px auto;
+	transform:rotate(0deg);
+}
+.home_screen_3_bottom_title{
+	width:126px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	font-size: 29px;
+	font-family: "微软雅黑";
+	margin-left: 20px;
+	float: left;
+	
+	color: #D80C18;
+}
+.home_screen_bottom1{
+margin-top: 20px;
+float: left;
+width: 119px;
+	height: 2px;
+	background: #A0A0A0;
+}
+.home_screen_bottom2{
+	margin-top: 20px;
+	float: right;
+width: 119px;
+	height: 2px;
+	background: #A0A0A0;
+}
+.home_screen_bottom{
+	margin-top: 20px;
+	display: block;
+	width: 119px;
+	height: 2px;
+	background: #A0A0A0;
+	
+}
+.home_screen_3_contentus{
+	width: 974px;
+	height: 126px;
+	display: block;
+	margin:0 auto 40px;
+}
+#bottom{
+	margin-top:52px;
+
+}
+#bottom_company{
+	width: 100%;
+	height: 65px;
+	overflow: hidden;
+	border-top:3px solid #D80C18;
+	background: #E03D46;
+	
+	display: none;
+	z-index: 200;
+	line-height: 65px;
+}
+.backtop{
+	position: fixed;
+	bottom:388px;
+	right:0;
+	display: none;
+	z-index: 999;
+	width: 50px;
+	height: 43px;
+}
+.backtophref{
+	display: block;
+	width: 50px;
+	height: 43px;
+}
+.uls li{
+	
+	width:100px;
+	height: 92px;
+	line-height: 92px;
+	text-align: center;
+	font-size: 14px;
+	float: left;
+	position: relative;
+}
+.uls li a{
+	color:#000;
+
+}
+
+.uls{
+	float: right;
+	margin-right: 20px;
+}
+
+.uls li .secondDiv{
+	position: absolute;
+	left: 0;
+	top: 92px;
+	width: 98px;
+	line-height: 32px;
+	border:1px;
+	display: none;
+	z-index: 9999;
+}
+.uls li .secondDiv a{
+	display: block;
+	width: 98px;
+	background: rgba(209,214,219,0.2);
+	border-bottom:1px ;
+	color: #000;
+	z-index: 9999;
+	margin-top: 2px;
+}
+
+.bottom_company_txt{
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+	font-family: "黑体";
+	line-height: 24px;
+	margin:0 auto;
+	height: 65px;
+	line-height: 65px;
+	overflow: hidden;
+}
+.about_title_img{
+	width:100%;
+	height: 285px;
+	border: none;
+}
+.about_title_aboutus{
+	position: absolute;
+	top:175px;
+	left: 159px;
+}
+#content_2{
+	width: 1366px;
+	height: 774px;
+	margin:0 auto;
+	
+	
+}
+.about_screen_3_txt_title{
+	width:126px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	font-size: 29px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top:119px;
+	left: 613px;
+	color: #D80C18;
+}
+.about_screen_line1{
+	position: absolute;
+	top:132px;
+	left:455px;
+}
+.about_screen_line2{
+	position: absolute;
+	top:132px;
+	left:753px;
+}
+.about_screen_line{
+	width: 119px;
+	height: 2px;
+	background: #A0A0A0;
+}
+.content_2_uls1,.content_2_uls2{
+	height: 108px;
+	width: auto;
+}
+.content_2_uls1{
+	float:left;
+}
+.content_2_uls2{
+	float: right;
+}
+.content_2_uls li{
+	height: 30px;
+	color: #8c8b8b;
+}
+.about_body_box1{
+	background: url(../img/about_body_box1.png) no-repeat;
+	width: 913px;
+	height: 135px;
+	position: relative;
+}
+.about_body_box1 span{
+	width: 768px;
+	height: 21px;
+	font-size: 21px;
+	line-height: 21px;
+	position: absolute;
+	top:55px;
+	left: 75px;
+}
+.about_screen_2_content{
+	background: url(../img/about_body_list_bg-1.png) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 1062px;
+}
+.about_screen_2_content_box{
+	width: 1366px;
+	height: auto;
+	margin:0 auto;
+	height: 1062px;
+	position: relative;
+}
+.about_screen_2_content_box span{
+	width: 301px;
+	height: 70px;
+	border:1px solid #D80C18;
+	position: absolute;
+	top:129px;
+	left: 153px;
+	font-size: 32px;
+	line-height: 70px;
+	text-align: center;
+	color: #D80C18;
+}
+.about_body_list{
+	position: absolute;
+	top: 222px;
+	left: 241px;
+}
+.about_screen_2_content_box p{
+	height:auto;width:1500px;
+	font-size:14px;
+	color: #6e6e6e;
+	font-style: italic;
+	
+}
+					

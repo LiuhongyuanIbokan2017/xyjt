@@ -1,0 +1,42 @@
+	$(function(){
+			$('#drag').css({
+			width:$(window).width()+'px',
+			height:$(window).height()+'px',
+			opacity:'.3'
+		});
+		$('.logobox').css({
+			position:'fixed',
+			top:$(window).height()/2-$('.logobox').height()/2+'px',
+			left:$(window).width()/2-$('.logobox').width()/2+'px'
+		});
+	
+		$(window).resize(function(){
+			$('#drag').css({
+				width:$(window).width()+'px',
+				height:$(window).height()+'px',
+				opacity:'.3'
+			});
+			$('.logobox').css({
+			position:'fixed',
+			top:$(window).height()/2-$('.logobox').height()/2+'px',
+			left:$(window).width()/2-$('.logobox').width()/2+'px'
+		});
+		})
+		$('.logo2').slideDown(1000,function(){
+			$('.chinese').fadeIn(1000,function(){
+				$('.english').fadeIn(1000);
+			});
+			$('a').hover(function(){
+				console.log($(this));
+				$(this).stop(true,false).animate({
+					fontSize:'30px'
+				},1000);
+			
+			},function(){
+				$(this).stop(true,false).animate({
+					fontSize:'23px'
+				},1000);
+				
+			})
+		});
+	})

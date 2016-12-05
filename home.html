@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/slideLeft.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<style type="text/css">
+	
+	.section2 { background: url(img/logo-bg.png) 100%;}
+
+	</style>
+	<script>
+
+	$(function(){
+	$('#xyjt').fullpage({
+		'scrollOverflow':true,
+		'navigation': true,
+		anchors:['page1','page2','page3'],
+		lockAnchor:true,
+		afterLoad: function(anchorLink, index){
+			if(index == 1){			
+				$('.backtop').fadeOut(1000);
+			}
+			if(index == 2){
+				
+				$('#drag').css({
+					width:$(window).width()+'px',
+					height:$(window).height()+'px'
+				});
+
+				$('.section2').find('#drag').delay(500).animate({
+					opacity: .5
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+			
+				$('.section3').find('.home_screen_3_title_bg').delay(500).fadeIn(1000);
+				$('#bottom_company').delay(500).fadeIn(1000);
+			}
+		
+		},
+		onLeave: function(index, direction){
+			if(index == 1){
+				$('.backtop').fadeIn(1000);
+			}
+			if(index == 2){
+				$('.section2').find('#drag').delay(500).animate({
+					opacity: 0
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+			
+				$('.section3').find('.home_screen_3_title_bg').delay(500).fadeOut(1000);
+				$('#bottom_company').delay(500).fadeOut(1000);
+			}
+			
+		}
+	});
+});
+
+</script>
+</head>
+<body>
+<div id='xyjt'>
+	<div class="section section1">
+		<div class="picbox">
+			<img src="img/logo-bg.png" class="bgpic bg1">	
+			<img src="img/logo-bg-1.png" class="bgpic bg2">
+		</div>
+		<div class="logopic">
+		<img src="img/logo2.png" class="logo2">
+		<span class="fullpage_1_span">写意<span style="font-size:18px;line-height:40.63px;font-family:'黑体';letter-spacing: 1px;">－－</span> 成就数字梦想</span>
+		</div>
+	</div>
+	<div class="section section2">
+	<div id="drag"></div>
+		<div style="width:1183px;height:549px;" id="box">
+		
+		<img src="img/home_txt_cover.png" class="home_txt_cover">
+		<img src="img/home_screen_2_pic1.png" alt="" class="home_screen_2_pic1 home_pic_cover">
+		<img src="img/home_screen_2_pic2.png" alt="" class="home_screen_2_pic2 home_pic_cover">
+		<img src="img/home_screen_2_pic3.png" alt="" class="home_screen_2_pic3 home_pic_cover">
+		<img src="img/home_screen_2_pic4.png" alt="" class="home_screen_2_pic4 home_pic_cover">
+		<img src="img/home_screen_2_pic5.png" alt="" class="home_screen_2_pic5 home_pic_cover">
+		<img src="img/home_screen_2_pic6.png" alt="" class="home_screen_2_pic6 home_pic_cover">
+		<img src="img/home_screen_2_txt1.png" alt="" class="home_screen_2_txt1 home_text_cover">
+		<img src="img/home_screen_2_txt2.png" alt="" class="home_screen_2_txt2 home_text_cover">
+		<img src="img/home_screen_2_txt3.png" alt="" class="home_screen_2_txt3 home_text_cover">
+		<img src="img/home_screen_2_txt4.png" alt="" class="home_screen_2_txt4 home_text_cover">
+		<img src="img/home_screen_2_txt5.png" alt="" class="home_screen_2_txt5 home_text_cover">
+		<img src="img/home_screen_2_txt6.png" alt="" class="home_screen_2_txt6 home_text_cover">
+		<div>
+			<img src="img/home_cover.png" alt="" class="home_cover"/>
+			<img src="img/home_cover.png" alt="" class="home_cover"/>
+			<img src="img/home_cover.png" alt="" class="home_cover"/>
+			<img src="img/home_cover.png" alt="" class="home_cover"/>
+			<img src="img/home_cover.png" alt="" class="home_cover"/>
+			<img src="img/home_cover.png" alt="" class="home_cover"/>
+		</div>
+		<span class="line line1"></span>
+		<span class="home_screen_2_title">旗下品牌</span>
+		<span class="line line2"></span>
+		<div class="picdrag_1 picdrag"></div>
+		<div class="picdrag_2 picdrag"></div>
+		<div class="picdrag_3 picdrag"></div>
+		<div class="picdrag_4 picdrag"></div>
+		<div class="picdrag_5 picdrag"></div>
+		<div class="picdrag_6 picdrag"></div>
+		</div>
+	</div>
+	<div class="section section3">
+		<div class="home_screen_box">
+			<div class="home_screen_3_title_bg">
+				<div class="home_screen_3_title">
+					<img src="img/home_screen_3_logo.png" alt="" class="home_screen_3_logo">
+					<ul class="uls">
+							<li><a href="home.html">首页</a></li>
+						<li><a href="about.html">关于写意</a>
+							<div class="secondDiv">
+								<a href="welfareandCulture.html">企业文化</a>
+								<a href="news.html">新闻中心</a>
+							</div>
+						</li>
+						<li><a href="javascript:;">写意数字</a></li>
+						<li><a href="javascript:;">意凡空间设计</a></li>
+						<li><a href="javascript:;">写意BIM</a></li>
+						<li><a href="javascript:;">意展展示</a></li>
+						<li><a href="advertise.html">人才招聘</a></li>
+						<li><a href="contactus.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="home_screen_3_txt_box">
+				<span class="home_screen_line home_screen_line1"></span>
+				<span class="home_screen_3_txt_title">旗下品牌</span>
+				<span class="home_screen_line home_screen_line2"></span>
+				<div id="content">
+					<p class="txt p1">写意集团，中国第一批数字展示综合方案提供商，自1998年成立，至今17年项目经验积累。集团旗下设立写意数字、意展、意凡、写意BIM4大<br>子品牌。共设有6个国内全资子公司及1个欧洲联络处，分别为上海集团总部、武宁分部、同济分部、南宁分部、徐汇分部、北海分部及慕尼黑<br>联络处。截止到目前为止，写意集团共服务过（2820）家国内客户，百余家国外客户；完成项目案例（2W）套。多年口碑积累，使写意集团在<br>政府、地产、企业和专业设计师领域备受关注。同时集团下设的人才与研发中心，为集团提供业内最新的高新技术研发，强化技术实力；培训相<br>关技术操作人员，输送新鲜血液，从内部支持集团各子品牌的全面成长。</p>
+					<ul  class="txt uls1">
+						<li><span></span><div>子品牌写意数字专注于为设计领域提供效果图、3D影像及三维互动业务服务</div></li>
+						<li><span></span><div>子品牌意展专注于为企业、政务的创意展馆项目提供策划、设计及施工三环一体化解决方案；</div></li>
+						<li><span></span><div>子品牌意凡专注于室内创意设计及后期施工，为品牌解决全套室内装修工作。</div></li>
+						<li><span></span><div>写意BIM则专注于建筑信息模型在建筑领域的操作应用及推广</div></li>
+					</ul>
+					<p  class="txt p2">在未来，写意集团继续运用先进的CRM客户管理平台及OA管理系统，为房地产、政府、军事、工业产品、影视、医疗等相关领域提供综合数字<br>展示项目，为企业及政府带来更清晰，更直观，更搞笑的形象展示。</p>
+					<input type="button" value="更多" class="morebtn" />
+				</div>
+				<div id="bottom">
+					<span class="home_screen_bottom home_screen_bottom1"></span>
+					<span class="home_screen_3_bottom_title">联系我们</span>
+					<span class="home_screen_bottom home_screen_bottom2"></span>
+					<img src="img/home_screen_3_contentus.png" alt="" class="home_screen_3_contentus">
+				</div>
+				
+			</div>
+
+		</div>
+		<div id="bottom_company">
+			<span class="bottom_company_txt">Copyright © 1998-2016 写意集团版权所有</span>
+		</div>
+	</div>
+	
+</div>
+	<a href="#page1" class="backtophref"><img src="img/backtop.png" class="backtop"></a>	
+	<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>
